@@ -1,0 +1,33 @@
+@page
+
+@model Budget_tracker.Model.MyTableModel
+@{
+    ViewData["Title"] = "MyTable";
+}
+
+<h2>MyTable</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+        <th>Column 4</th>
+        <th>Column 5</th>
+        <th>Column 6</th>
+        <th>Column 7</th>
+    </tr>
+    </thead>
+    <tbody>
+    @for (int i = 0; i < 5; i++)
+    {
+        <tr>
+            @for (int j = 0; j < 7; j++)
+            {
+                <td>Row @i, Col @j</td>
+            }
+        </tr>
+    }
+    </tbody>
+</table>
