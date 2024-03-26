@@ -30,6 +30,12 @@
                         <a class="nav-link text-dark" asp-area="" asp-page="/MyTable">MyTable</a>
                     </li>
                 </ul>
+                <!-- Right-aligned items for Log in -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Login">Log in</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -53,3 +59,4 @@
 @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
